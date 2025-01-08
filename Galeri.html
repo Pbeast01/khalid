@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KHALID AZIZ</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles2.css">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #000000;
+    }
+
+    /* Header section styling */
+    header {
+      background-color: #1e1e1ed3;
+      color: #000000;
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #0056b3;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-item {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .nav-item:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact section styling */
+    #contacts {
+      padding: 40px;
+      background-color: #000000;
+      text-align: center;
+    }
+
+    #contacts h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    #contacts p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    iframe {
+      border: 0;
+      width: 100%;
+      max-width: 600px;
+      height: 450px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background-color: #3b3b3b;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 0 10px rgba(61, 61, 61, 0.1);
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      background-color: #000000;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+    }
+
+    .input-group input {
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      padding: 8px;
+      background-color: transparent;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: #ffffff;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .row {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div class="left-section" style="margin-left: 160px;">
+      <a class="logo" href="#">[K.A]</a>
+    </div>
+
+    <nav style="margin-right: 160px;">
+      <a class="nav-item active" href="index.html">Home</a>
+      <a class="nav-item active" href="Profil.html">Profil</a>
+      <a class="nav-item active" href="Galeri.html">Gallery</a>
+      <a class="nav-item active" href="Contacts.html">Contacts</a>
+    </nav>
+  </header>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Gallery</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #fff;
+    }
+
+    /* Gallery container */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      background-color: #000;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Caption styling */
+    .gallery-item .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      padding: 10px;
+      text-align: center;
+      color: #888;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>My Gallery</h1>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <!-- Gallery Item 1 -->
+    <div class="gallery-item">
+      <img src="PHGP.jpg">
+      <div class="caption">Project 1 - Photography</div>
+    </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item">
+            <img src="galeri6.jpg">
+            <div class="caption">Project 2 - Photography</div>
+          </div>
+
+    <!-- Gallery Item 3 -->
+    <div class="gallery-item">
+        <img src="galeri3.jpg">
+        <div class="caption">Project 3 - Photography</div>
+      </div>
+
+    <!-- Gallery Item 4 -->
+    <div class="gallery-item">
+        <img src="galeri2.jpg">
+        <div class="caption">Project 4 - Photography</div>
+      </div>
+
+    <!-- Gallery Item 5 -->
+    <div class="gallery-item">
+      <img src="photography.jpg">
+      <div class="caption">Project 5 - Photography</div>
+    </div>
+
+    <!-- Gallery Item 6 -->
+    <div class="gallery-item">
+      <img src="PHGP2.jpg" alt="Project 3">
+      <div class="caption">Project 6 - Photography</div>
+    </div>
+
+    <!-- Gallery Item 7 -->
+    <div class="gallery-item">
+      <img src="app_GUI_UI.jpg" alt="Project 4">
+      <div class="caption">Project 7 - UI/UX Design</div>
+    </div>
+
+    <!-- Gallery Item 8 -->
+    <div class="gallery-item">
+      <img src="app_GUI_UI2.jpg" alt="Project 5">
+      <div class="caption">Project 8 - UI/UX Design</div>
+    </div>
+
+    <!-- Gallery Item 9 -->
+    <div class="gallery-item">
+      <img src="personal_brend.jpg" alt="Project 6">
+      <div class="caption">Project 9 - Branding</div>
+        </div>
+    </section>
+
+    <!-- Gallery Item 10 -->
+    <div class="gallery-item">
+        <img src="drawing_art.jpg" alt="Project 7">
+        <div class="caption">Project 10 - Drawing Art</div>
+       </div>
+    </section>
+
+    <!-- Gallery Item 11 -->
+    <div class="gallery-item">
+        <img src="Drawing_art2.jpg" alt="Project 8">
+        <div class="caption">Project 11 - Drawing Art</div>
+       </div>
+    </section>
+      
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 My Gallery. All rights reserved.</a></p>
+  </footer>
+
+</body>
+</html>
